@@ -1,0 +1,52 @@
+
+<?xml version="1.0" encoding="iso-88591"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="noticias">
+<xs:complexType>
+<xs:sequence>
+			<xs:element name="noticia">
+			<xs:complexType>
+			<xs:sequence>
+			<xs:element name="id">
+			<xs:simpleType>
+			<xs:restriction base="xs:string">
+			<xs:pattern value="[a-zA-Z]{1}-[0-9]{50}"/>
+			</xs:restriction>
+			</xs:simpleType>
+			</xs:element>
+			<xs:element name="titulo">
+			<xs:simpleType>
+			<xs:restriction base="xs:string">
+			<xs:pattern value="[a-zA-Z]{1}-[0-9]{50}"/>
+			</xs:restriction>
+			</xs:simpleType>
+			</xs:element>
+			<xs:element name="data">
+			<xs:simpleType>
+			<xs:restriction base="xs:string">
+			<xs:pattern value="[a-zA-Z]{1}-[0-9]{10}"/>
+			</xs:restriction>
+			</xs:simpleType>
+			</xs:element>
+			<xs:element name="conteudo">
+			<xs:simpleType>
+			<xs:restriction base="xs:string">
+			<xs:pattern value="[a-zA-Z]{1}-[0-9]{200}"/>
+			</xs:restriction>
+			</xs:simpleType>
+			</xs:element>
+			<xs:element name="link">
+			<xs:simpleType>
+			<xs:restriction base="xs:string">
+			<xs:pattern value="[a-zA-Z]{1}-[0-9]{50}"/>
+			</xs:restriction>
+			</xs:simpleType>
+			</xs:element>
+			</xs:sequence>
+			</xs:complexType>
+			</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>

@@ -1,0 +1,13 @@
+//criando xml para importação da noticia
+<noticias
+<?xml version="1.0" encoding="iso-8859-1"?>
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="schema.xsd">
+	<noticia>
+		<idPortal>1</idPortal>
+		<titulo>Titulo por xml na mesma pagina</titulo>
+		<data>2016-06-01</data>
+		<conteudo>Conteudo da noticia.</conteudo>
+		<link> link da noticia exemplo = http://link.xxx/algumacoisa.html</link>
+	</noticia>
+</noticias>

@@ -1,0 +1,26 @@
+Manual do Usuario
+
+Como acessar o sistema siga os passos abaixo:
+1-Configurar conexao com o banco de dados
+	<?php
+
+class Database{
+	private $database = "jango";//Criar um banco com nome qualquer
+	private $user = "postgres";//Nome do usuario no postgres
+	private $pass = "12345"; //Senha do postgres
+	public  $db = ''; //Crie variavel global
+//Criação em PDO 
+
+2- Executar a arquivo noticia.sql no banco de dados
+	- Está dentro da pasta dados/noticia.sql
+		
+	function __construct(){
+		try {
+		    return $this->db = new PDO("pgsql:host=localhost dbname={$this->database} user={$this->user} password={$this->pass}");
+		} catch (PDOException $e) {
+		    print $e->getMessage();
+		}
+	}
+
+}
+
