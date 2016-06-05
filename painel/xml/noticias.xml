@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<noticias>
+	<noticia>
+		<idPortal>1</idPortal>
+		<titulo>Titulo apresentado por xml</titulo>
+		<data>2016-06-01</data>
+		<conteudo>Conteudo da noticia.</conteudo>
+		<link> link da noticia exemplo = http://link.xxx/algumacoisa.html</link>
+	</noticia>
+</noticias>
